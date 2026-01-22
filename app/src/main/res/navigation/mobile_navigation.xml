@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_host_fragment"
+    app:startDestination="@id/nav_photos">
+    <fragment
+        android:id="@+id/nav_photos"
+        android:name="com.example.tohtobin_pro_41.PhotoFragment"
+        android:label="Photos"/>
+    <fragment
+        android:id="@+id/nav_audio"
+        android:name="com.example.tohtobin_pro_41.AudioFragment"
+        android:label="Audio"/>
+    <fragment
+        android:id="@+id/nav_video"
+        android:name="com.example.tohtobin_pro_41.VideoFragment"
+        android:label="Video"/>
+</navigation>
