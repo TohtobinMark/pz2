@@ -19,7 +19,9 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
         bottomNavView = binding.bottomNav
         bottomNavView.setupWithNavController(navController)
-        loadFragment(PhotoFragment(), "photos")
+        if(savedInstanceState != null) {
+            loadFragment(PhotoFragment(), "photos")
+        }
     }
     private fun loadFragment(fragment: Fragment, tag: String) {
         currentFragment = fragment
